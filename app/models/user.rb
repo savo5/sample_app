@@ -1,6 +1,5 @@
 class User < ApplicationRecord
 
-  # require 'securerandom'
   attr_accessor :remember_token
 
   before_save { email.downcase! }
